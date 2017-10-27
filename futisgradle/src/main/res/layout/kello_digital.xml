@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="310dp" 
+           
+    android:layout_height="120dp"
+            
+    android:id="@+id/digitausta"
+    >
+
+    <ImageView
+        android:id="@+id/view1"
+		android:background="#C8000000"        
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <ImageView
+        android:id="@+id/clubLogoDigiclock"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/digiclocklogo" />
+
+    <TextView
+        android:id="@+id/aikateksti"
+        android:layout_width="190dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="2dp"
+        
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/clubLogoDigiclock"               
+        android:gravity="left"
+        android:text="20:22"
+        android:textColor="#FFFFFF"
+        android:textSize="60dp"
+        android:typeface="monospace" />
+    
+    <TextView
+        android:id="@+id/pvmteksti"
+        android:layout_width="190dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/aikateksti"
+        android:layout_toRightOf="@id/clubLogoDigiclock"
+        android:text="Fri 16 Jul 2014"        
+        android:gravity="center"
+        android:textColor="#BBBBFF"
+        android:textSize="14sp"
+        android:typeface="monospace" />
+    
+</RelativeLayout>
+
+
+
+

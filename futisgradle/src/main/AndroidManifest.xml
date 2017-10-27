@@ -1,0 +1,122 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.terwaamo.futis">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application 
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <receiver
+            android:name=".Widget"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name=".AIKALEIMA" />
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/clock_widget_provider" />
+        </receiver>
+
+        <activity
+            android:name=".AppWidgetConfigure"
+            android:theme="@style/Theme.AppCompat" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!--
+            intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter
+
+
+            -->
+        </activity>
+        <activity
+            android:name=".Preferences"
+            android:screenOrientation="nosensor" >
+            <intent-filter>
+                <action android:name=".Preferences" />
+
+                <category android:name="android.intent.category.PREFERENCE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AlarmClock"
+            android:label="Takaisin"
+            android:parentActivityName=".AppWidgetConfigure"
+            android:theme="@style/Theme.AppCompat" >
+
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AppWidgetConfigure" />
+        </activity>
+        <activity
+            android:name=".Alarm"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_alarm"
+            android:theme="@style/Theme.AppCompat" >
+        </activity>
+        <activity
+            android:name=".GameCalendar"
+            android:label="Takaisin"
+            android:parentActivityName=".AppWidgetConfigure"
+            android:theme="@style/Theme.AppCompat" >
+
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AppWidgetConfigure" />
+        </activity>
+        <activity
+            android:name=".BestPlayerVote"
+            android:label="Takaisin"
+            android:parentActivityName=".GameCalendar"
+            android:theme="@style/Theme.AppCompat" >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".GameCalendar" />
+        </activity>
+        <activity
+            android:name=".LeagueResults"
+            android:label="Takaisin"
+            android:parentActivityName=".AppWidgetConfigure"
+            android:theme="@style/Theme.AppCompat" >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AppWidgetConfigure" />
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+        
+
+        <activity
+            android:name=".InfoActivity"
+            android:label="Takaisin"
+            android:parentActivityName=".AppWidgetConfigure" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AppWidgetConfigure" />
+        </activity>
+        <activity
+            android:name=".RSSNews"
+            android:label="Takaisin"
+            android:parentActivityName=".AppWidgetConfigure" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AppWidgetConfigure" />
+        </activity>
+
+    </application>
+
+</manifest>

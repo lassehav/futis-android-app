@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FC Lahti Futis!</string>
+    <string name="pref_clock">Kellon asetukset</string>
+    <string name="pref_clock_style_summary_label">Vaihda digitaali- ja viisarikellon välillä</string>
+    <string name="pref_clock_style_label">Kellon tyyppi</string>
+    <string name="pref_others">Muut asetukset</string>
+    <string name="pref_custom_url_label">Pikanäppäimen osoite</string>
+    <string name="pref_custom_url_summary_label">Aseta oma www-osoite pikanäppäimeen</string>
+    <string name="pref_custom_url_enabled_label">Pikanäppäin käytössä</string>
+    <string name="club_web_page_address">http://www.fclahti.fi/</string>
+    <string name="league_web_page_address">http://www.veikkausliiga.com/</string>
+    <string name="club_link_button">FC Lahti</string>
+    <string name="league_link_button">Veikkausliiga</string>
+    <string name="results_link_button">Tulospalvelu</string>
+    <string name="own_bookmark_button">Oma pikalinkki</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_alarm">Alarm</string>
+    <string name="title_activity_game_calendar">Pelikalenteri</string>
+    <string name="title_activity_best_player_vote">Parhaan pelaajan äänestys</string>
+    <string name="app_id">266596620189453</string>
+    <string name="action_share">Jaa</string>
+    <string name="action_refresh">Päivitä</string>
+    <string name="fb_logo_image">fc_lahti_144</string>
+    <string name="serverAddress">http://terwaamo.fi/futis/</string>
+    <string name="title_activity_info">InfoActivity</string>
+    <string name="licence_info_text">Veikkausliiga on Jalkapalloliiga ry:n omistama tavaramerkki ja jalkapalloseurojen logot sekä muut graafiset tunnisteet ovat ko. seurojen omaisuutta. Niiden kaupallinen hyödyntäminen ilman Jalkapalloliiga ry:n lupaa on kielletty.</string>
+    <string name="company_info">Terwaamo Oy</string>
+    <string name="company_contact_info">info@terwaamo.fi</string>
+    <string name="facebookapp_namespace">futisfclahti</string>
+</resources>

@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fullscreen_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".Alarm"
+    android:orientation="vertical" 
+    android:gravity="center"    >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Herätys"
+        android:textSize="60dp" />
+
+    <TextView
+        android:id="@+id/currentTimeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+ 
+        android:textSize="80dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Torkku"
+            android:onClick="snoozeClick" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Lopeta" 
+            android:onClick="closeAlarmClick"/>
+
+    </LinearLayout>
+
+    </LinearLayout>

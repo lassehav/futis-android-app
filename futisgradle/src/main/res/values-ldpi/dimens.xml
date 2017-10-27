@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ClockTextMarginTop">-10dp</dimen>
+    <dimen name="ClockTextSize">60sp</dimen>
+    <dimen name="DateTextMarginTop">60dp</dimen>
+    <dimen name="ClockTextMarginLeft">10dp</dimen>
+    <dimen name="AppWidgetHeaderImageMarginTop">2dp</dimen>
+	<dimen name="AppWidgetHeaderImageMarginBottom">2dp</dimen>
+    
+</resources>

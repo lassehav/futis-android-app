@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="facebooksdk">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/futisgradle/libs/facebooksdk.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

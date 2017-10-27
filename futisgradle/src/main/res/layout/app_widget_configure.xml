@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kenttatausta"
+    >
+    
+<LinearLayout 
+    android:id="@+id/mainMenuLinear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_marginTop="@dimen/AppWidgetHeaderImageMarginTop"
+        android:layout_marginBottom="@dimen/AppWidgetHeaderImageMarginBottom"
+        android:onClick="clubWebPageClick"
+         />
+
+    		
+        
+    
+        
+        <Button
+			android:id="@+id/wakeupButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"      
+            android:onClick="alarmClockClick"
+            android:text="Herätys"/>             
+
+        <Button
+            android:id="@+id/OwnBookmark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="ownBookmarkClick"
+            android:text="@string/own_bookmark_button" />
+
+        <Button
+            android:id="@+id/voteCenterButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="voteCenterClick"
+            android:text="Tulokset ja pelaajaäänestys" />                        
+            
+        <!-- Button
+            android:id="@+id/settingsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="settingsClick"
+            android:text="Asetukset" /-->
+        
+        <Button
+            android:id="@+id/leagueResultsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="leagueResultsClick"
+            android:text="Sarjataulukko" />
+
+        <Button
+            android:id="@+id/rssNewsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="rssNewsClick"
+            android:text="Veikkausliigan uutiset" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/veikkausliiga" 
+            android:paddingTop="20dp"
+            android:onClick="leagueWebPageClick"
+            />
+        
+</LinearLayout>
+</ScrollView>

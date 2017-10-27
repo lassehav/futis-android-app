@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+	<dimen name="widget_margin">0dp</dimen>
+    <dimen name="ClockTextMarginTop">10dp</dimen>
+    <dimen name="ClockTextMarginLeft">0dp</dimen>
+    <dimen name="ClockTextSize">55sp</dimen>
+    <dimen name="DateTextMarginTop">0dp</dimen>
+    <dimen name="DateTextMarginLeft">30dp</dimen>
+    <dimen name="widget_width">250dp</dimen>
+    <dimen name="widget_height">110dp</dimen>
+	<dimen name="AppWidgetHeaderImageMarginTop">20dp</dimen>
+	<dimen name="AppWidgetHeaderImageMarginBottom">20dp</dimen>
+	
+	
+	
+	
+</resources>

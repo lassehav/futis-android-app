@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>       	
+	<dimen name="ClockTextMarginTop">10dp</dimen>
+	<dimen name="ClockTextMarginLeft">0dp</dimen>
+	<dimen name="ClockTextSize">62sp</dimen>
+	<dimen name="DateTextMarginTop">0dp</dimen>
+	<dimen name="DateTextMarginLeft">24dp</dimen>	
+		
+	<!-- dimen name="widget_width">368dp</dimen-->
+	<dimen name="widget_width">250dp</dimen>
+	<dimen name="widget_height">146dp</dimen>
+	
+</resources>

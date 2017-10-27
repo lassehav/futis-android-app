@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"   
+    android:layout_height="wrap_content"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:padding="2dip"
+    android:id="@+id/PlayerListRow"
+    
+    >
+
+    <TextView
+        android:id="@+id/PlayerNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"        
+		android:textSize="20sp"        
+        android:layout_marginRight="10dp"
+        android:paddingLeft="10dp"
+        android:gravity="center" 
+        android:textColor="#66B3FF"
+        />
+
+    <TextView
+        android:id="@+id/PlayerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/PlayerNumber"
+        android:layout_alignBottom="@+id/PlayerNumber"
+        android:layout_toRightOf="@+id/PlayerNumber"        
+        android:textSize="20sp"        
+        android:gravity="center_vertical" 
+        
+        android:textColor="#FFFFFF"
+         />    
+
+    <TextView
+        android:id="@+id/PlayerVotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textSize="20sp"        
+        android:paddingRight="10dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="#59D642" />
+
+    <Button
+        android:id="@+id/BestPlayerVoteButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"        
+        android:text="Äänestä" 
+        
+        android:gravity="center" />
+    
+    <LinearLayout
+        android:id="@+id/PlayerStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PlayerName"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/PlayerNumber"  
+        
+        >
+        <!-- TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:textSize="12sp"
+        android:text="1-0 43min"
+        />
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:textSize="12sp"
+        android:text="2-0 55min"
+        /-->
+    </LinearLayout>
+
+</RelativeLayout>

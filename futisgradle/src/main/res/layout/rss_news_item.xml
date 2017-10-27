@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+
+    android:padding="2dip"
+    android:layout_marginBottom="8dp"
+    >
+
+
+    <TextView
+        android:id="@+id/newsItemTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:ellipsize="none"
+        android:scrollHorizontally="false"
+        android:maxLines="100"
+        android:width="0dip"
+        android:text="News Title News Title News Title News Title News Title News Title News Title" />
+
+    <TextView
+        android:id="@+id/newsPubTime"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/newsItemTitle"
+        android:ellipsize="none"
+        android:scrollHorizontally="false"
+        android:maxLines="100"
+        android:width="0dip"
+        android:text="18.4.2014" />
+
+    <TextView
+        android:id="@+id/newsItemDescription"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/newsPubTime"
+        android:layout_alignWithParentIfMissing="true"
+        android:ellipsize="none"
+        android:scrollHorizontally="false"
+        android:maxLines="100"
+        android:width="0dip"
+        android:text="News description" />
+
+</RelativeLayout>

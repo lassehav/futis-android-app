@@ -1,0 +1,185 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"              
+    >
+	
+    <TextView        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ottelun parhaan pelaajan äänestys"
+        android:textSize="20sp"        
+        android:gravity="center"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"        
+        />
+    
+    <TextView
+        android:id="@+id/BestPlayerVoteGameTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="6.4.2014, 16:00"                
+        android:gravity="center"
+        />
+    
+    <TextView
+        android:id="@+id/TeamNames"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"            
+        android:textSize="22sp"
+        android:gravity="center"            
+        android:textColor="#FFFFFF"
+        />
+    
+	<TextView
+        android:id="@+id/GameGoals"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"            
+        android:textSize="28sp"
+        android:gravity="center"            
+        android:textColor="#FFFFFF"
+        />
+	
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Kotijoukkue" 
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Vierasjoukkue" 
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            />
+        
+    </LinearLayout>
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp" 
+               >
+
+        <ImageView
+            android:id="@+id/BestPlayerVoteHomeTeamLogo"
+            android:layout_width="75dp"
+            android:layout_height="75dp"            
+            android:layout_weight="0.5"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/hjk_144"                       
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:onClick="homeTeamClick"
+             />
+             
+        <!--  ImageView
+            android:id="@+id/BestPlayerVoteHomeTeamLogo"
+            android:layout_width="75dp"
+            android:layout_height="75dp"            
+            android:layout_weight="0.5"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/hjk_144"
+            android:background="#BF0E7A00"   
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:onClick="homeTeamClick"
+             /-->
+
+        <ImageView
+            android:id="@+id/BestPlayerVoteAwayTeamLogo"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_weight="0.5"
+            android:layout_gravity="center_horizontal"            
+            android:src="@drawable/rops_144" 
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:onClick="awayTeamClick"
+            />
+
+    </LinearLayout>
+    <TextView 
+        android:id="@+id/yourTeamVoteInstruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Äänestä joukkueesi parasta pelaajaa klikkaamalla äänestä -nappia"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <RelativeLayout 
+    android:layout_width="fill_parent"   
+    android:layout_height="15dp"
+    >
+        <TextView
+            android:id="@+id/bestPlayerVoteListHeaderPlayerNum"   
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_alignParentBottom="true"
+			android:textSize="12sp"      
+	        android:text="#"
+	        android:layout_marginRight="20dp"
+	        android:paddingLeft="10dp"
+	        android:gravity="bottom" />
+	
+	    <TextView	
+	        android:id="@+id/bestPlayerVoteListHeaderName"        
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"	        
+	        android:layout_toRightOf="@+id/bestPlayerVoteListHeaderPlayerNum"
+	        android:layout_alignParentBottom="true"
+	        android:textSize="12sp"
+	        android:text="Nimi"
+	        android:gravity="bottom" 
+	         />
+	
+	    <TextView
+	        android:id="@+id/bestPlayerVoteListHeaderCount"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_alignParentBottom="true"
+	        android:textSize="12sp"
+	        android:text="Äänimäärä" 
+	        android:paddingRight="10dp"
+	        android:gravity="bottom"
+	        android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout 
+        android:id="@+id/linearPlayerList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

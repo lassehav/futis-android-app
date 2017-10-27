@@ -1,0 +1,192 @@
+apply plugin: 'android'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "19.1.0"
+
+    lintOptions {
+        abortOnError false
+    }
+    signingConfigs {
+        fchonka {
+            storeFile file("Z:\\LassenProjektit\\Seurakello\\TerwaamoKeystore")
+            storePassword "seF74jkl"
+            keyAlias "futisfchonka"
+            keyPassword "seF74jkl"
+        }
+        fcinter {
+            storeFile file("Z:\\LassenProjektit\\Seurakello\\TerwaamoKeystore")
+            storePassword "seF74jkl"
+            keyAlias "futisfcinter"
+            keyPassword "seF74jkl"
+        }
+        fclahti {
+            storeFile file("Z:\\LassenProjektit\\Seurakello\\TerwaamoKeystore")
+            storePassword "seF74jkl"
+            keyAlias "futisfclahti"
+            keyPassword "seF74jkl"
+        }
+        ffjaro {
+            storeFile file("Z:\\LassenProjektit\\Seurakello\\TerwaamoKeystore")
+            storePassword "seF74jkl"
+            keyAlias "futisffjaro"
+            keyPassword "seF74jkl"
+        }
+        hjk {
+            storeFile file("Z:\\LassenProjektit\\Seurakello\\TerwaamoKeystore")
+            storePassword "seF74jkl"
+            keyAlias "futishjk"
+            keyPassword "seF74jkl"
+        }
+        ifk {
+            storeFile file("Z:\\LassenProjektit\\Seurakello\\TerwaamoKeystore")
+            storePassword "seF74jkl"
+            keyAlias "futisifk"
+            keyPassword "seF74jkl"
+        }
+        kups {
+            storeFile file("Z:\\LassenProjektit\\Seurakello\\TerwaamoKeystore")
+            storePassword "seF74jkl"
+            keyAlias "futiskups"
+            keyPassword "seF74jkl"
+        }
+        mypa {
+            storeFile file("Z:\\LassenProjektit\\Seurakello\\TerwaamoKeystore")
+            storePassword "seF74jkl"
+            keyAlias "futismypa"
+            keyPassword "seF74jkl"
+        }
+        rops {
+            storeFile file("Z:\\LassenProjektit\\Seurakello\\TerwaamoKeystore")
+            storePassword "seF74jkl"
+            keyAlias "futisrops"
+            keyPassword "seF74jkl"
+        }
+        sjk {
+            storeFile file("Z:\\LassenProjektit\\Seurakello\\TerwaamoKeystore")
+            storePassword "seF74jkl"
+            keyAlias "futissjk"
+            keyPassword "seF74jkl"
+        }
+        tps {
+            storeFile file("Z:\\LassenProjektit\\Seurakello\\TerwaamoKeystore")
+            storePassword "seF74jkl"
+            keyAlias "futistps"
+            keyPassword "seF74jkl"
+        }
+        vps {
+            storeFile file("Z:\\LassenProjektit\\Seurakello\\TerwaamoKeystore")
+            storePassword "seF74jkl"
+            keyAlias "futisvps"
+            keyPassword "seF74jkl"
+        }
+    }
+    defaultConfig {
+        applicationId "com.terwaamo.futis"
+        minSdkVersion 14
+        targetSdkVersion 19
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+        def fchonkaSigningVariable = signingConfigs.fchonka
+        def fcinterSigningVariable = signingConfigs.fcinter
+        def fclahtiSigningVariable = signingConfigs.fclahti
+        def ffjaroSigningVariable = signingConfigs.ffjaro
+        def hjkSigningVariable = signingConfigs.hjk
+        def ifkSigningVariable = signingConfigs.ifk
+        def kupsSigningVariable = signingConfigs.kups
+        def mypaSigningVariable = signingConfigs.mypa
+        def ropsSigningVariable = signingConfigs.rops
+        def sjkSigningVariable = signingConfigs.sjk
+        def tpsSigningVariable = signingConfigs.tps
+        def vpsSigningVariable = signingConfigs.vps
+
+
+        fchonka {
+            applicationId "com.terwaamo.futis.fchonka"
+            versionName "1.0.5"
+            versionCode 6
+            signingConfig fchonkaSigningVariable
+        }
+        fcinter {
+            applicationId "com.terwaamo.futis.fcinter"
+            versionName "1.0.4"
+            versionCode 5
+            signingConfig fcinterSigningVariable
+        }
+        fclahti {
+            applicationId "com.terwaamo.futis.fclahti"
+            versionName "1.0.4"
+            versionCode 5
+            signingConfig fclahtiSigningVariable
+        }
+        ffjaro {
+            applicationId "com.terwaamo.futis.ffjaro"
+            versionName "1.0.4"
+            versionCode 5
+            signingConfig ffjaroSigningVariable
+        }
+        hjk {
+            applicationId "com.terwaamo.futis.hjk"
+            versionName "1.0.4"
+            versionCode 5
+            signingConfig hjkSigningVariable
+        }
+        ifk {
+            applicationId  "com.terwaamo.futis.ifk"
+            versionName "1.0.4"
+            versionCode 5
+            signingConfig ifkSigningVariable
+        }
+        kups {
+            applicationId "com.terwaamo.futis.kups"
+            versionName "1.0.4"
+            versionCode 5
+            signingConfig kupsSigningVariable
+        }
+        mypa {
+            applicationId "com.terwaamo.futis.mypa"
+            versionName "1.0.4"
+            versionCode 5
+            signingConfig mypaSigningVariable
+        }
+        rops {
+            applicationId "com.terwaamo.futis.rops"
+            versionName "1.0.4"
+            versionCode 5
+            signingConfig ropsSigningVariable
+        }
+        sjk {
+            applicationId "com.terwaamo.futis.sjk"
+            versionName "1.0.4"
+            versionCode 5
+            signingConfig sjkSigningVariable
+        }
+        tps {
+            applicationId "com.terwaamo.futis.tps"
+            versionName "1.0.4"
+            versionCode 5
+            signingConfig tpsSigningVariable
+        }
+        vps {
+            applicationId "com.terwaamo.futis.vps"
+            versionName "1.0.4"
+            versionCode 5
+            signingConfig vpsSigningVariable
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:19.+'
+    compile files('libs/flurryAnalytics_3.4.0.jar')
+    compile files('libs/facebooksdk.jar')
+}

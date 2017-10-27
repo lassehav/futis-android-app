@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" 
+    android:background="@drawable/kenttatausta"
+    >
+     
+    <PreferenceCategory
+        android:layout_width="match_parent"
+        android:title="@string/pref_clock" >
+ 
+        <ListPreference
+            android:key="prefClockStyle"
+            android:entries="@array/prefClockStyles"
+            android:summary="@string/pref_clock_style_summary_label"
+            android:entryValues="@array/prefClockStyles"
+            android:title="@string/pref_clock_style_label" 
+            android:defaultValue="Digitaalikello"
+            />               
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+        android:layout_width="match_parent"
+        android:title="@string/pref_others" >
+        
+        <CheckBoxPreference 
+		    android:key="prefCustomURLEnabled"
+		    android:title="@string/pref_custom_url_enabled_label" 
+		    android:defaultValue="false"
+		    />
+        	
+        
+        <EditTextPreference
+            android:title="@string/pref_custom_url_label"
+            android:summary="@string/pref_custom_url_summary_label"
+		    android:key="prefCustomURL"		    		   
+		    android:inputType="textUri"
+		    android:defaultValue="http://"
+            >                       
+        </EditTextPreference>
+        
+        
+    </PreferenceCategory>
+ 
+</PreferenceScreen>

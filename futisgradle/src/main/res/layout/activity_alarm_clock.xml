@@ -1,0 +1,71 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+        android:gravity="center"
+        android:orientation="vertical" >
+    
+        <TimePicker
+                android:id="@+id/timePickerForAlarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" 
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                
+                />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="Herätyskello"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <ToggleButton
+                android:id="@+id/alarmSetToggle"
+                android:layout_width="96dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:text="ToggleButton"
+                android:onClick="alarmSetToggleClick"
+                 />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/alarmTimeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="30dp"       
+            android:text="Herättää kello"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/alarmTimeValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="ei asetettu"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+
+        
+        
+    </LinearLayout>
+    
+</ScrollView>

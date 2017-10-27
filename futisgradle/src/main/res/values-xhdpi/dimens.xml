@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+	<dimen name="widget_margin">4dp</dimen>
+	<dimen name="ClockTextMarginTop">10dp</dimen>
+	<dimen name="ClockTextSize">62sp</dimen>
+	<dimen name="DateTextMarginTop">78dp</dimen>
+	<dimen name="DateTextMarginLeft">5dp</dimen>
+	<dimen name="ClockTextMarginLeft">0dp</dimen>
+	<dimen name="AppWidgetHeaderImageMarginTop">20dp</dimen>
+	<dimen name="AppWidgetHeaderImageMarginBottom">20dp</dimen>
+    
+</resources>

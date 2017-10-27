@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Futis.iml" filepath="$PROJECT_DIR$/Futis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/futisgradle/futisgradle.iml" filepath="$PROJECT_DIR$/futisgradle/futisgradle.iml" />
+    </modules>
+  </component>
+</project>
+
