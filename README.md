@@ -13,6 +13,9 @@ Futis! app was an brandable mobile application targeted for sports organizations
 
 In the final version the gradle build system was used to achieve easy configurability for the different brands. In this version the Veikkausliiga (the premier football league in Finland) clubs are featured.
 
+The code is here freely available, but the resources are not for me to licence or release. They are here just for illustration purposes.
+
+
 Screenshots
 -------
 ![Screenshot](/../screenshots/screenshots/ss1.png?raw=true "Screenshot")
