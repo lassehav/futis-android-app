@@ -15,10 +15,10 @@ In the final version the gradle build system was used to achieve easy configurab
 
 Screenshots
 -------
-1
-2
-3
-4
-5
+![Screenshot](/../screenshots/screenshots/ss1.png?raw=true "Screenshot")
+![Screenshot](/../screenshots/screenshots/ss2.png?raw=true "Screenshot")
+![Screenshot](/../screenshots/screenshots/ss3.png?raw=true "Screenshot")
+![Screenshot](/../screenshots/screenshots/ss4.png?raw=true "Screenshot")
+![Screenshot](/../screenshots/screenshots/ss5.png?raw=true "Screenshot")
 
 
